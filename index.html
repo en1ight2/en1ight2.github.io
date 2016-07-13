@@ -1,18 +1,36 @@
 ---
 layout: default
 ---
+<section class="jumbotron">
+  <h1 class="max-width-limited">Neural networks awesome</h1>
+  <div class="intro max-width-limited">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Suspendisse gravida tortor eget enim posuere varius.
+      Integer a odio molestie, lacinia sem a, dignissim dui.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <p>
+      Suspendisse gravida tortor eget enim posuere varius.
+      Integer a odio molestie, lacinia sem a, dignissim dui.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Suspendisse gravida tortor eget enim posuere varius.
+      Integer a odio molestie, lacinia sem a, dignissim dui.
+    </p>
+  </div>
+</section>
 
-<div class="posts">
+<article class="page-main max-width-limited">
   {% for post in site.posts %}
-    <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+  <div class="post">
+    <div class="post__date">{{ post.title }}</div>
+    <h2 class="post__title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+    <div class="post__preview">
+      {{ post.excerpt }}
+    </div>
+    <div class="post__border"></div>
+  </div>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
   {% endfor %}
-</div>
+</article>
