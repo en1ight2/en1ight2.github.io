@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Machine learning
+title: Machine learning 222
 date: july 13, 2016
 ---
 
