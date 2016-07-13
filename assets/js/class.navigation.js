@@ -41,7 +41,7 @@ Navigation.prototype.showTopMenu = function (topMenu){
   setTimeout(function (){
     topMenu.style.height = height + 'px';
     topMenu.setAttribute('data-state', 'opened');
-  }, 100);
+  }, 50);
 };
 
 /** Drop-up top menu **/
