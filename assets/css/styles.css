@@ -33,7 +33,7 @@ a {
   a:hover {
     text-decoration: none;
     transition: all 0.2s;
-    color: #71e1f1; }
+    color: #39AEFF; }
 
 figure {
   padding: 0;
@@ -133,9 +133,9 @@ body {
     transition: all 0.3s;
     text-align: center; }
     #top-nav li a:hover {
-      color: #71e1f1; }
+      color: #39AEFF; }
   #top-nav li.active a {
-    color: #71e1f1; }
+    color: #39AEFF; }
   @media (max-width: 1200px) {
     #top-nav li a {
       padding: 15px 30px; } }
@@ -178,7 +178,7 @@ body {
     color: #b6b5b2;
     cursor: pointer; }
     .social-box a:hover {
-      color: #71e1f1; }
+      color: #39AEFF; }
   @media (max-width: 1200px) {
     .social-box a {
       padding: 0 20px; } }
@@ -337,7 +337,7 @@ main {
     color: #c3c3c3; }
   .mail-text:focus {
     background-color: inherit;
-    outline: 1px solid #71e1f1; }
+    outline: 1px solid #39AEFF; }
   .mail-text:focus::-webkit-input-placeholder {
     color: transparent; }
   .mail-text:focus::-moz-placeholder {
