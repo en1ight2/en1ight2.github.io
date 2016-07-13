@@ -24,7 +24,6 @@ Integer pellentesque purus non interdum convallis. Phasellus tortor diam, sodale
 efficitur venenatis magna. Praesent fermentum, justo vitae dictum rutrum, turpis mi bibendum eros,
 quis hendrerit libero massa non libero. Vivamus sed sem a lorem vehicula dignissim.
 
-
 ##It’s that time of the year.##
 
 
