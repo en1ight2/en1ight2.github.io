@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}, {{ site.description }}</title>
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
 
   {% include meta.html %}
 
@@ -34,9 +34,7 @@
   </ul>
 
   <ul class="social-box">
-    <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/en1ight" target="_blank"></a></li>
-    <li><a class="fa fa-skype" href="skype:en1ight?chat" target="_blank"></a></li>
-    <li class="email-btn"><a class="fa fa-envelope email-popup-btn" target="_blank"></a></li>
+    {% include social-icons.html %}
   </ul>
 </header>
 
@@ -46,11 +44,7 @@
 
 <footer class="main-footer">
   <ul class="social-box">
-    <li><a class="fa fa-vk" href="https://vk.com/d.bobrenko" target="_blank"></a></li>
-    <li><a class="fa fa-facebook" href="https://www.facebook.com/dmytriy.bobrenko" target="_blank"></a></li>
-    <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/en1ight" target="_blank"></a></li>
-    <li><a class="fa fa-skype" href="skype:en1ight?chat" target="_blank"></a></li>
-    <li class="email-btn"><a class="fa fa-envelope email-popup-btn" target="_blank"></a></li>
+    {% include social-icons.html %}
   </ul>
 </footer>
 
