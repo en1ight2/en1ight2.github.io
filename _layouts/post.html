@@ -2,16 +2,16 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
+<article class="page-content max-width-limited">
+  <header>
+    <div class="date">{{ page.date | date: "%B %e, %Y" }}</div>
+    <h1 class="title">{{ page.title }}</h1>
+    <div class="line"></div>
+  </header>
 
-  <div class="entry">
+  <section class="post-content">
     {{ content }}
-  </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+  </section>
 
   {% include disqus.html %}
 </article>

@@ -1,51 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+<head>
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}, {{ site.description }}</title>
 
-    {% include meta.html %}
+  {% include meta.html %}
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Kanit:400,800' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}"
+        href="{{ site.baseurl }}/feed.xml"/>
+  <link href="{{ site.baseurl }}/assets/images/favicon.png" rel="shortcut icon" type="image/png"/>
+  <link href="{{ site.baseurl }}/assets/css/normalize.css" rel="stylesheet">
+  <link href="{{ site.baseurl }}/assets/lib/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="{{ site.baseurl }}/assets/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="{{ site.baseurl }}/assets/css/styles.css" rel="stylesheet">
+</head>
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
+<body>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+<header class="main-header">
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+  <button type="button" id="navbar-btn">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
+  <ul id="top-nav">
+    <li class="link-main active"><a href="{{ site.baseurl }}/">d.bobrenko's blog</a></li>
+    <li class="link-about"><a href="{{ site.baseurl }}/about">about</a></li>
+    <li class="link-contacts"><a href="{{ site.baseurl }}/contacts">contacts</a></li>
+  </ul>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
+  <ul class="social-box">
+    <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/en1ight" target="_blank"></a></li>
+    <li><a class="fa fa-skype" href="skype:en1ight?chat" target="_blank"></a></li>
+    <li class="email-btn"><a class="fa fa-envelope email-popup-btn" target="_blank"></a></li>
+  </ul>
+</header>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+<main role="main">
+  {{ content }}
+</main>
 
-    {% include analytics.html %}
-  </body>
+<footer class="main-footer">
+  <ul class="social-box">
+    <li><a class="fa fa-vk" href="https://vk.com/d.bobrenko" target="_blank"></a></li>
+    <li><a class="fa fa-facebook" href="https://www.facebook.com/dmytriy.bobrenko" target="_blank"></a></li>
+    <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/en1ight" target="_blank"></a></li>
+    <li><a class="fa fa-skype" href="skype:en1ight?chat" target="_blank"></a></li>
+    <li class="email-btn"><a class="fa fa-envelope email-popup-btn" target="_blank"></a></li>
+  </ul>
+</footer>
+
+<form id="contact-form" class="hidden" action="/" method="POST">
+  <input class="mail-text" type="text" name="name" spellcheck="false" placeholder="Name" required="">
+  <input class="mail-text" type="email" name="email" spellcheck="false" placeholder="Email" required="">
+  <textarea class="mail-text" rows="3" name="message" spellcheck="false" placeholder="Message" required=""></textarea>
+  <button class="send-btn" type="submit">send message</button>
+</form>
+
+<div id="modal-overlay"></div>
+
+{% include analytics.html %}
+
+<script src="{{ site.baseurl }}/assets/js/class.navigation.js"></script>
+<script src="{{ site.baseurl }}/assets/js/class.modal.js"></script>
+<script src="{{ site.baseurl }}/assets/js/main.js"></script>
+</body>
 </html>
