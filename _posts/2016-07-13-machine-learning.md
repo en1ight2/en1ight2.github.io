@@ -12,7 +12,6 @@ Fusce consectetur blandit ipsum.&nbsp;Cum sociis natoque penatibus et magnis dis
 Phasellus magna est, auctor vitae eros eget, rutrum tincidunt ipsum.
 
 
-
 **Integer ac urna libero**. Vivamus ornare interdum nisi, non tincidunt elit tincidunt quis.
 Aenean commodo rhoncus egestas. Integer et quam eget turpis commodo tempor ac at elit.
 <a href="http://www.bateauxtheme.com" target="_blank">Aenean malesuada augue ac lectus laoreet tincidunt</a>
@@ -25,8 +24,7 @@ efficitur venenatis magna. Praesent fermentum, justo vitae dictum rutrum, turpis
 quis hendrerit libero massa non libero. Vivamus sed sem a lorem vehicula dignissim.
 
 
-
-##It’s that time of the year...
+## It’s that time of the year...
 
 
 *Nullam est ipsum, feugiat nec venenatis a, efficitur in diam. Sed non tincidunt libero*.
